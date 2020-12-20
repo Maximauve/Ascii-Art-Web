@@ -1,3 +1,5 @@
+<--- README IN FRENCH -->
+
 # <center> Ascii-Art-Web </center></u>
 
 ## Sommaire:
