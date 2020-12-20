@@ -1,0 +1,127 @@
+body {
+  background-color: #242428;
+  background-image: url(img_assets/tree.png);
+  background-attachment: scroll;
+  background-position: 40% 0%;
+  background-size: 1500px 900px;
+  background-repeat: no-repeat;
+  color: rgb(200, 200, 200);
+}
+h1 {
+  text-align: center;
+}
+
+/* Menu */
+
+nav.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav.menu ul li {
+  list-style: none;
+}
+
+nav.menu ul li a {
+  padding: 10px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.menu li a:hover {
+  border-bottom: 3px solid;
+}
+nav.menu ul li ul {
+  display: none;
+} /* Rend le menu déroulant caché par défaut */
+
+nav.menu ul li:hover ul {
+  /* Affiche la dropNav au survol de la souris avec la class .drop */
+  z-index: 99999;
+  display: list-item !important;
+  position: absolute;
+  margin-top: 1px;
+  margin-left: -10px;
+}
+
+.droite {
+  float: right;
+}
+
+.nom {
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+.gauche {
+  float: left;
+  vertical-align: middle;
+}
+
+nav.menu ul li:hover ul li {
+  float: none;
+  margin-right: 10px;
+}
+
+/* Menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #4caf50;
+}
+table {
+  width: 99%;
+  height: 550px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+}
+table td {
+  vertical-align: top;
+  /* border: 1px solid white; */
+}
+.left {
+  text-align: left;
+  /* border: 1px solid white; */
+  width: 25%;
+}
+.centered {
+  text-align: center;
+  /* border: 1px solid white; */
+  width: 50%;
+}
+.right {
+  /* border: 1px solid white; */
+  text-align: right;
+  margin-right: 25px;
+}
+.pp {
+  /* margin-left: 80%; */
+  width: 250px;
+}
+h2 {
+  text-decoration: underline;
+}
+
+.Ma_Liste {
+  font-size: 5px;
+}

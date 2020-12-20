@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheet.css" />
+    <title>Ascii-Art Web</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/SVG_ASCII_logo.svg/1280px-SVG_ASCII_logo.svg.png" >
+  </head>
+	
+  <body>
+		<!-- BARRE DU HAUT */ -->
+
+		<nav class="menu">
+			<ul>
+				<li class="gauche"><a href="https://git.ytrack.learn.ynov.com/MMOURGUES/Ascii-Art-Web" rel="noopener noreferrer" target="_blank"> <img src="assets/img_assets/Gitea_Logo.png" width="15" title="Le lien du GitHub par ici!"></a></li>
+				<li class="gauche"><a href="/">Acceuil</a></li>
+				<!-- Début du menu déroulant -->
+				<li class="droite"><a href="#">Ascii-Art crée par :</a>
+					<ul>
+						<li class="nom"><a action="/Mattéo" href="Mattéo">Mattéo FERREIRA</a></li>
+						<li class="nom"><a action="/Maxime" href="Maxime">Maxime MOURGUES</a></li>
+						<li class="nom"><a action="/Costa" href="Costa">Costa REYPE</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+    <!-- /* BARRE DU HAUT */ -->
+		<h1>Ascii-Art Web</h1>
+		<h2>Bienvenue sur notre projet!</h2>
+    <!-- <p class="paragraphe">
+      <h2>Bienvenue sur notre projet!</h2>
+      <br>
+      Nous sommes heureux de vous présenter notre travail sur l'Ascii-Art Web!
+      <br>
+      Décendez vers le bas pour voir ce qui vous attend!
+      <span>
+        Nous sommes assez fiers du travail que l'on vous présente, et nous nous sommes bien amusés sur ce projet!
+      </span>
+    </p> -->
+    <table>
+      <tr>
+        <td class='left'>
+					Nous sommes heureux de vous présenter notre travail sur l'Ascii-Art Web!
+					<br>
+					Décendez vers le bas pour voir ce qui vous attend!
+					<br>
+					<br>
+				</td>
+				<td class='centered'>
+					<br>
+				</td>
+				<td class='right'>
+					Nous sommes assez fiers du travail que l'on vous présente, et nous nous sommes bien amusés sur ce projet!
+					<br>
+				</td>
+      </tr>
+		</table>
+	<table class="Params">
+		<form action="/ascii-art" method="POST"> 	
+  	  <div class="Ascii">
+  	    <div class="Convert">
+  	    <label for="text">Texte à convertir en Ascii: </label>
+  	    <div class="controlRowRight">
+  	      <textarea name="inputText" id="inputText" style="width: 250px; margin: 0px; height: 15px;" >{{ .Texte }}</textarea>
+  	    </div>
+  	    <button type="submit" class="bouton">Convertir</button>
+  	  </div>
+		<br>  
+			<fieldset class="Police">
+				<legend>Police</legend>
+				<div>
+					<input type="radio" id="font_standard" name="font" value="standard" {{ .Standard }}>
+					<label for="font_standard">Standard</label>
+
+					<input type="radio" id="font_shadow" name="font" value="shadow" {{ .Shadow }}>
+					<label for="font_shadow">Shadow</label>
+
+					<input type="radio" id="font_thinkertoy" name="font" value="thinkertoy" {{ .Thinkertoy }}>
+					<label for="font_thinkertoy">Thinkertoy</label>
+
+					<input type="radio" id="font_htag" name="font" value="htag" {{ .Htag }}>
+					<label for="font_htag">Htag</label>
+				</div>
+				    
+			</fieldset>
+		<br>  
+			<fieldset class="Align">
+				<legend>Alignement</legend>
+				<div>
+					<input type="radio" id="left" name="align" value="left" {{ .Left }}>
+					<label for="left">Gauche</label>
+
+					<input type="radio" id="centered" name="align" value="center" {{ .Center }}>
+					<label for="center">Centré</label>
+
+					<input type="radio" id="right" name="align" value="right" {{ .Right }}>
+					<label for="right">Droite</label>
+				</div>
+			</fieldset>
+		<br>  
+			<div>
+				<label for="color-select">Couleur:</label>
+				<select name="couleur" id="color-select" class="select-css" value="option[value]">
+						<option  value="white" {{ .Default}}>--Choisir une couleur--</option>
+						<option  value="white" {{ .White}}>Blanc</option>
+						<option  value="red" {{ .Red}}>Rouge</option>
+						<option  value="yellow" {{ .Yellow}}>Jaune</option>
+						<option  value="green" {{ .Green}}>Vert</option>
+						<option  value="cyan" {{ .Cyan}}>Cyan</option>
+						<option  value="blue" {{ .Blue}}>Bleu</option>
+						<option  value="purple" {{ .Purple}}>Violet</option>
+						<option  value="black" {{ .Black}}>Noir</option>
+				</select>
+			</div>
+			<div class= "return">
+				<div align="{{ .Alignement}}">
+					<pre value="{{ .Couleur }}">
+						 {{ .OUT }} 
+					</pre>
+				</div>
+			</div>
+		</form>
+	</table>
+  </body>
+</html>

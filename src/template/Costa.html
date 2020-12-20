@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="./assets/profile.css" />
+	<title>Costa Reype</title>
+	<link rel="shortcut icon" href="assets/img_assets/profile.png">
+</head>
+
+<body>
+	<!-- BARRE DU HAUT */ -->
+	
+	<nav class="menu">
+		<ul>
+			<li class="gauche"><a href="https://git.ytrack.learn.ynov.com/MMOURGUES/Ascii-Art-Web" rel="noopener noreferrer"
+					target="_blank"> <img src="assets/img_assets/Gitea_Logo.png" width="15" title="Le lien du GitHub par ici!"></a>
+			</li>
+			<li class="gauche"><a href="/">Acceuil</a></li>
+			<!-- Début du menu déroulant -->
+			<li class="droite"><a href="#">Ascii-Art crée par :</a>
+				<ul>
+					<li class="nom"><a action="/Mattéo" href="Mattéo">Mattéo FERREIRA</a></li>
+					<li class="nom"><a action="/Maxime" href="Maxime">Maxime MOURGUES</a></li>
+					<li class="nom"><a action="/Costa" href="Costa">Costa REYPE</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<h1> {{ .Name }} </h1>
+	<table>
+      <tr>
+        <td class='left'>
+				<h2>
+					Mes difficultés rencontrées: 
+				</h2>
+				<h3><i>Début du Projet:</i></h3><br><br>
+				Ne m'y connaissant pas en HTML et encore moins en CSS j'ai eu du mal à commencer la page HTML. J'ai donc donné cette partie à <a href="/Maxime" style="color: green;">@Maximauve_</a>
+				<br><br>
+				<h3><i>Connection Golang-HTML:</i></h3><br><br>
+				Au début, lorsque <a href="/Maxime" style="color: green;">@Maximauve_</a> eut finit une première version de la page, je ne voyais pas 
+				comment faire pour reprendre les options et le texte donnés dans la page d'accueil. Mon principal blocage fut la méthode POST: quand je demandais 
+				de l'aide, on m'a parlé de méthode POST et GET dont j'ignorais l'utilisation. 
+				<br><br>
+
+		</td>
+		<td class='centered'>
+
+			<br>
+		</td>
+		<td class='right'>
+			<a href="https://www.instagram.com/tamashi_yami/" rel="noopener noreferrer" target="_blank">
+				<img class="pp" src="assets/img_assets/Kosta.jpg" title= "Eh, bogoss ou pas"> 
+				</a>
+				<br>
+				<h2>
+					Présentation: 
+				</h2>
+				<p style="text-align: left;">
+				Nom: Reype<br>
+				Prénom: Costa <br>
+				Pseudo:<a style="color: rgb(29, 79, 230);">Tamashi</a> (allias DIEU des boules)<br>
+				Age: 18 ans<br>
+				Loisir:
+					Programmation,
+					Sports (tout types de sports),
+					Musique (en écouter et en faire)
+					Jeux vidéos (bien évidemment)		
+					<br>
+				Professions Visées: Game Devellopper / Cryptologue <br><br>
+				<br>
+					</p>
+		</td>
+      </tr>
+		</table>
+</body>
+</html>
